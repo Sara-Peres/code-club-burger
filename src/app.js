@@ -5,7 +5,7 @@ import { resolve } from 'path'
 import cors from 'cors'
 
 const corsOptions = {
-  origin: 'https://code-club-burger-interface.vercel.app/',
+  origin: 'https://code-club-burger-interface.vercel.app',
   credentials: true,
 }
 
