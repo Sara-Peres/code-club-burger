@@ -18,6 +18,8 @@ class App {
     // Configure CORS
     this.app.use(cors(corsOptions))
 
+    this.app.options('*', cors(corsOptions))
+
     this.middlewares()
     this.routes()
   }
@@ -37,9 +39,6 @@ class App {
 
   routes() {
     this.app.use(routes)
-
-    // Handle pre-flight requests
-    this.app.options('*', cors(corsOptions))
   }
 }
 
